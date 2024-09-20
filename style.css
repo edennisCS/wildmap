@@ -1,0 +1,20 @@
+#map { height: 180px; }
+
+
+body {
+    margin: 0; /* Remove default margin for full coverage */
+    height: 100vh; /* Ensure the body covers the full viewport height */
+    background: rgb(170,137,115); /* Fallback color */
+    background: linear-gradient(185deg, rgba(170,137,115,1) 1%, rgba(255,252,202,1) 100%);
+  }
+  
+
+.playwrite-au-nsw-bold {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+  }
+  
+  
