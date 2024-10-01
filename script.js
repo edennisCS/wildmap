@@ -15,237 +15,207 @@
     }).addTo(map);
       
   
-      // GeoJSON wildlife sightings data
-      const geojsonWildlife = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [144.9631, -37.8136]
-      },
-      "properties": {
-        "species": "Koala",
-        "date": "2024-08-15",
-        "location": "You Yangs Regional Park near Melbourne, Australia",
-        "description": "Spotted near a eucalyptus tree in the park.",
-        "iconUrl": "Icons/koala.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [153.0281, -27.4678]
-      },
-      "properties": {
-        "species": "Flying Fox",
-        "date": "2023-07-22",
-        "location": "Brisbane, Australia",
-        "description": "Observed during evening feeding time.",
-        "iconUrl": "Icons/bat.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [138.6007, -34.9285]
-      },
-      "properties": {
-        "species": "Kangaroo",
-        "date": "2023-09-01",
-        "location": "Adelaide, Australia",
-        "description": "Seen hopping across a field near the outskirts of the city.",
-        "iconUrl": "Icons/kangaroo.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [151.2093, -33.8688]
-      },
-      "properties": {
-        "species": "Platypus",
-        "date": "2022-06-15",
-        "location": "Sydney, Australia",
-        "description": "Spotted near a freshwater creek.",
-        "iconUrl": "Icons/platy.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [122.2558, -17.9614]
-      },
-      "properties": {
-        "species": "Saltwater Crocodile",
-        "date": "2023-05-12",
-        "location": "Broome, Western Australia",
-        "description": "Seen swimming near the mangroves.",
-        "iconUrl": "Icons/croco.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [130.8456, -12.4634]
-      },
-      "properties": {
-        "species": "Frill-necked Lizard",
-        "date": "2023-10-05",
-        "location": "Darwin, Australia",
-        "description": "Observed displaying its frill in a defensive posture.",
-        "iconUrl": "Icons/liz.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [146.7753, -19.2576]
-      },
-      "properties": {
-        "species": "Cassowary",
-        "date": "2023-08-22",
-        "location": "Townsville, Australia",
-        "description": "Spotted in a dense forest area.",
-        "iconUrl": "Icons/casso.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [117.8757, -23.6980]
-      },
-      "properties": {
-        "species": "Dingo",
-        "date": "2021-09-14",
-        "location": "Karijini National Park, Western Australia",
-        "description": "Heard howling at night, spotted the next morning near the campsite.",
-        "iconUrl": "Icons/dingo.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [142.7028, -10.5844]
-      },
-      "properties": {
-        "species": "Green Sea Turtle",
-        "date": "2023-11-01",
-        "location": "Cape York Peninsula, Australia",
-        "description": "Observed nesting on the beach.",
-        "iconUrl": "Icons/turtle.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [137.0655, -25.3444]
-      },
-      "properties": {
-        "species": "Wedge-tailed Eagle",
-        "date": "2024-07-30",
-        "location": "Outback, Australia",
-        "description": "Seen soaring above the desert plains.",
-        "iconUrl": "Icons/eagle.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [149.1269, -35.2809]
-      },
-      "properties": {
-        "species": "Echidna",
-        "date": "2023-02-18",
-        "location": "Canberra, Australia",
-        "description": "Seen wandering near a bush trail.",
-        "iconUrl": "Icons/echidna.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [150.1750, -36.4855]
-      },
-      "properties": {
-        "species": "Wombat",
-        "date": "2024-04-12",
-        "location": "Mimosa Rocks National Park, New South Wales",
-        "description": "Spotted digging burrows near the forest edge.",
-        "iconUrl": "Icons/wombat.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [119.4612, -31.9505]
-      },
-      "properties": {
-        "species": "Bilby",
-        "date": "2023-03-29",
-        "location": "Goldfields-Esperance, Western Australia",
-        "description": "Observed foraging for insects during the night.",
-        "iconUrl": "Icons/bilby.png"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [145.7751, -16.9186]
-      },
-      "properties": {
-        "species": "Tree Kangaroo",
-        "date": "2024-02-20",
-        "location": "Daintree Rainforest, Queensland",
-        "description": "Spotted high in the trees in the rainforest.",
-        "iconUrl": "Icons/treekangaroo.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [149.1244, -37.7393]
-      },
-      "properties": {
-        "species": "Lyrebird",
-        "date": "2022-12-12",
-        "location": "Gippsland, Victoria",
-        "description": "Heard mimicking various bird calls in the forest.",
-        "iconUrl": "Icons/lyrebird.png"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [141.3195, -29.9782]
-      },
-      "properties": {
-        "species": "Emu",
-        "date": "2023-06-10",
-        "location": "Sturt National Park, New South Wales",
-        "description": "Seen wandering across the open plains.",
-        "iconUrl": "Icons/emu.png"
-      }
-    }
-  ]
-};
+    const geojsonWildlife = {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [144.9631, -37.8136]
+          },
+          "properties": {
+            "species": "Koala",
+            "date": "2024-08-15",
+            "location": "You Yangs Regional Park near Melbourne, Australia",
+            "sighting": "Spotted near a eucalyptus tree in the park.",
+            "speciesInfo": "Koalas are arboreal marsupials native to Australia, known for their diet primarily consisting of eucalyptus leaves. [Source: Wikipedia]",
+            "iconUrl": "Icons/koala.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [153.0281, -27.4678]
+          },
+          "properties": {
+            "species": "Flying Fox",
+            "date": "2023-07-22",
+            "location": "Brisbane, Australia",
+            "sighting": "Observed during evening feeding time.",
+            "speciesInfo": "Flying foxes are large bats found in Australia and other parts of the world, known for their role in pollination and seed dispersal. [Source: Wikipedia]",
+            "iconUrl": "Icons/bat.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [138.6007, -34.9285]
+          },
+          "properties": {
+            "species": "Kangaroo",
+            "date": "2023-09-01",
+            "location": "Adelaide, Australia",
+            "sighting": "Seen hopping across a field near the outskirts of the city.",
+            "speciesInfo": "Kangaroos are large marsupials endemic to Australia, known for their powerful hind legs and ability to hop great distances. [Source: Wikipedia]",
+            "iconUrl": "Icons/kangaroo.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [151.2093, -33.8688]
+          },
+          "properties": {
+            "species": "Platypus",
+            "date": "2022-06-15",
+            "location": "Sydney, Australia",
+            "sighting": "Spotted near a freshwater creek.",
+            "speciesInfo": "The platypus is a semiaquatic egg-laying mammal endemic to eastern Australia, including Tasmania. It is one of the only mammals that lay eggs. [Source: Wikipedia]",
+            "iconUrl": "Icons/platy.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [122.2558, -17.9614]
+          },
+          "properties": {
+            "species": "Saltwater Crocodile",
+            "date": "2023-05-12",
+            "location": "Broome, Western Australia",
+            "sighting": "Seen swimming near the mangroves.",
+            "speciesInfo": "The saltwater crocodile is the largest living reptile and is native to saltwater habitats in parts of Asia, Australia, and the Indo-Pacific. [Source: Wikipedia]",
+            "iconUrl": "Icons/croco.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [130.8456, -12.4634]
+          },
+          "properties": {
+            "species": "Frill-necked Lizard",
+            "date": "2023-10-05",
+            "location": "Darwin, Australia",
+            "sighting": "Observed displaying its frill in a defensive posture.",
+            "speciesInfo": "The frill-necked lizard is known for its large frill, which it can extend when threatened. It is native to northern Australia and southern New Guinea. [Source: Wikipedia]",
+            "iconUrl": "Icons/liz.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [146.7753, -19.2576]
+          },
+          "properties": {
+            "species": "Cassowary",
+            "date": "2023-08-22",
+            "location": "Townsville, Australia",
+            "sighting": "Spotted in a dense forest area.",
+            "speciesInfo": "Cassowaries are large, flightless birds native to the tropical forests of New Guinea, nearby islands, and northern Australia. [Source: Wikipedia]",
+            "iconUrl": "Icons/casso.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [117.8757, -23.6980]
+          },
+          "properties": {
+            "species": "Dingo",
+            "date": "2021-09-14",
+            "location": "Karijini National Park, Western Australia",
+            "sighting": "Heard howling at night, spotted the next morning near the campsite.",
+            "speciesInfo": "The dingo is a wild canine found primarily in Australia, and is known for its vocal howling and pack behavior. [Source: Wikipedia]",
+            "iconUrl": "Icons/dingo.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [142.7028, -10.5844]
+          },
+          "properties": {
+            "species": "Green Sea Turtle",
+            "date": "2023-11-01",
+            "location": "Cape York Peninsula, Australia",
+            "sighting": "Observed nesting on the beach.",
+            "speciesInfo": "Green sea turtles are large sea turtles found in tropical and subtropical waters, known for their migratory behavior and herbivorous diet. [Source: Wikipedia]",
+            "iconUrl": "Icons/turtle.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [137.0655, -25.3444]
+          },
+          "properties": {
+            "species": "Wedge-tailed Eagle",
+            "date": "2024-07-30",
+            "location": "Outback, Australia",
+            "sighting": "Seen soaring above the desert plains.",
+            "speciesInfo": "The wedge-tailed eagle is the largest bird of prey in Australia and is known for its distinctive wedge-shaped tail. [Source: Wikipedia]",
+            "iconUrl": "Icons/eagle.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [149.1269, -35.2809]
+          },
+          "properties": {
+            "species": "Echidna",
+            "date": "2023-02-18",
+            "location": "Canberra, Australia",
+            "sighting": "Seen wandering near a bush trail.",
+            "speciesInfo": "Echidnas are spiny, egg-laying mammals native to Australia and New Guinea, known for their ability to roll into a ball when threatened. [Source: Wikipedia]",
+            "iconUrl": "Icons/echidna.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [150.1750, -36.4855]
+          },
+          "properties": {
+            "species": "Wombat",
+            "date": "2024-04-12",
+            "location": "Mimosa Rocks National Park, New South Wales",
+            "sighting": "Spotted digging burrows near the forest edge.",
+            "speciesInfo": "Wombats are short-legged marsupials that dig extensive burrow systems. They are native to Australia. [Source: Wikipedia]",
+            "iconUrl": "Icons/wombat.png"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [119.4612, -31.9505]
+          },
+          "properties": {
+            "species": "Bilby",
+            "date": "2023-03-29",
+            "location": "Goldfields-Esperance, Western Australia",
+            "sighting": "Observed foraging for insects during the night.",
+            "speciesInfo": "The bilby is a desert-dwelling marsupial native to Australia, known for its long ears and nocturnal habits. [Source: Wikipedia]",
+            "iconUrl": "Icons/bilby.png"
+          }
+        }
+      ]
+    };
+    
 
 
       
@@ -321,7 +291,8 @@ function pointToLayer(feature, latlng) {
               "<b>Species:</b> " + feature.properties.species +
               "<br><b>Date:</b> " + feature.properties.date +
               "<br><b>Location:</b> " + feature.properties.location +
-              "<br><b>Description:</b> " + feature.properties.description
+              "<br><b>Sighting:</b> " + feature.properties.sighting +
+              "<br><b>Species Info:</b> " + feature.properties.speciesInfo
           );
       }
   }).addTo(map);
